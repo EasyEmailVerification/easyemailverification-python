@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easyemailverification"
+version = "1.0.0"
+description = "Official Python client for the Easy Email Verification API: verify email addresses one by one, in batches of 50 or as bulk lists."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.8"
+authors = [{ name = "Easy Email Verification", email = "support@easyemailverification.com" }]
+keywords = ["email verification", "email validation", "email checker", "verify email", "bounce", "email list cleaning", "disposable email", "catch-all"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Communications :: Email",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://www.easyemailverification.com/en-US/api"
+Documentation = "https://www.easyemailverification.com/en-US/api/reference"
+Repository = "https://github.com/EasyEmailVerification/easyemailverification-python"
+Issues = "https://github.com/EasyEmailVerification/easyemailverification-python/issues"
+
+[tool.setuptools.package-data]
+easyemailverification = ["py.typed"]
